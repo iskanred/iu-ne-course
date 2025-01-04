@@ -1,6 +1,9 @@
 # iu-ne-course
 Networks Engineering course at Innopolis University
 
-* ![lab-01](lab-01/iu-ne-lab-01-Iskander_Nafikov)
-* ![lab-02](lab-02/iu-ne-lab-02-Iskander_Nafikov)
- * ![lab-03](lab-03/iu-ne-lab-03-Iskander_Nafikov)
+Topics:
+1. **Lab-01**: GNS3, Port Forwarding, NAT
+2. **Lab-02**: IPv6, Nmap
+3. **Lab-03**: VLAN, Link Aggregation
+4. **Lab-04**: OSPF
+5. **Lab-05**: QoS

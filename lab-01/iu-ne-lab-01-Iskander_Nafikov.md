@@ -13,7 +13,7 @@
 
 I have installed the necessary software (**Docker** and **QEMU** for virtualisation and **WireShark** for traffic sniffing):
 * Here I successfully started `gns3server`
-	![[Pasted image 20241028210803.png]]
+	![[images/Pasted image 20241028210803.png]]
 * Here I successfully started `gns3` client
 	![[Pasted image 20241028210930.png]]
 

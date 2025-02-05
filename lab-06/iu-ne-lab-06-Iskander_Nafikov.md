@@ -62,7 +62,7 @@ I prefer Mikrotik
 
 >**3.** Enable authentication (what kind of authentication did you use)? Make sure that you can ping and trace all your network.
 
-- I found no information on how to configure authentication for LDP's TCP packets (since they can be sniffed and corrupted) as in [Cisco](https://www.cisco.com/c/dam/en/us/td/docs/ios/12_0/12_0sy/feature/guide/md5orig.pdf) for example. [It seems](https://forum.mikrotik.com/viewtopic.php?t=149304) there is no such a possibility and nobody talks about it. However, we know that LDP uses OSPF for routing based on labels. Thus, if we OSPF hosts have other `auth-key`, these paths won't be distributed over all LDP peers.
+- I found no information on how to configure authentication for LDP's TCP packets (since they can be sniffed and corrupted) as in [Cisco](https://www.cisco.com/c/dam/en/us/td/docs/ios/12_0/12_0sy/feature/guide/md5orig.pdf) for example. [It seems](https://forum.mikrotik.com/viewtopic.php?t=149304) there is no such a possibility and nobody talks about it. However, we know that LDP uses OSPF for routing based on labels. Thus, if our OSPF hosts have other `auth-key`, these paths won't be distributed over all LDP peers.
 - Therefore I configured `MD5` authentication on all the routers' interfaces
 	```shell
 	/routing ospf interface-template set numbers=0,1 auth=md5 auth-id=1 auth-key=password

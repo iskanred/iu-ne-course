@@ -44,7 +44,7 @@ The first and the second ones differ. NAT is easier, but is is limited to some n
 * For example, here is the Web node's console:
 	![[Pasted image 20241028231644.png]]
 * To work it well I configured a subnet `192.168.122.0/28` and set the static IP addresses (`192.168.122.2` and `192.168.122.3`) for both PC nodes and set `192.168.122.1` as the default gateway which is represented by NAT node.
-	- First, I configured the local network for the Web node with the help of `netplan` inside the `etc/netplan/50-cloud-init.yaml:
+	- First, I configured the local network for the Web node with the help of `` inside the `etc/netplan/50-cloud-init.yaml:
 		![[Pasted image 20241028231946.png]]
 	- Then I did similar for the Admin node inside its config in GNS since it is a Docker node:
 		![[Pasted image 20241028232111.png]]
@@ -101,11 +101,3 @@ However, I were able to configure the gateway for every end device node:
 	![[Pasted image 20241029015638.png]]
 * Worker (its ip is `10.1.1.2/24`)
 	![[Pasted image 20241029015657.png]]
-
-
-> 5. Configure port forwarding for http and ssh to Web and Admin respectively.
-
-
-
-> 6. Check that you can ssh to the Admin and access your web page from your workstation/host.
-

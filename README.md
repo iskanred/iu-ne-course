@@ -7,3 +7,4 @@ Topics:
 3. **Lab-03**: VLAN, Link Aggregation
 4. **Lab-04**: OSPF
 5. **Lab-05**: QoS
+6. Lab-06: MPLS
